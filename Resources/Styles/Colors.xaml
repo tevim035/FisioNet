@@ -5,12 +5,31 @@
 
     <!-- Note: For Android please see also Platforms\Android\Resources\values\colors.xml -->
 
-    <Color x:Key="Primary">#512BD4</Color>
-    <Color x:Key="PrimaryDark">#ac99ea</Color>
+    <!-- ============================================================
+         PALETA FISIOLINK — Design System (Figma)
+         Primary: Verde Clínico · Background: Branco · Text: Cinza Escuro
+         ============================================================ -->
+
+    <!-- Marca / Cor Primária -->
+    <Color x:Key="Primary">#2E8B57</Color>
+    <!-- Variante clara usada em botões/ícones sobre tema escuro (mantém o padrão Light/Dark já existente no template) -->
+    <Color x:Key="PrimaryDark">#6FCF97</Color>
     <Color x:Key="PrimaryDarkText">#242424</Color>
+    <!-- Tonalidade suave do Primary, usada em selos, badges e caixas de destaque (ex: aviso de "Filtro de Anonimização") -->
+    <Color x:Key="PrimaryLight">#E3F3EA</Color>
+
     <Color x:Key="Secondary">#DFD8F7</Color>
     <Color x:Key="SecondaryDarkText">#9880e5</Color>
     <Color x:Key="Tertiary">#2B0B98</Color>
+
+    <!-- Superfícies -->
+    <Color x:Key="Background">#FFFFFF</Color>
+    <!-- Superfície neutra p/ campos de texto, cards internos (Entry/Editor) -->
+    <Color x:Key="Surface">#F5F7F6</Color>
+
+    <!-- Textos base -->
+    <Color x:Key="TextPrimary">#333333</Color>
+    <Color x:Key="TextSecondary">#6E6E6E</Color>
 
     <Color x:Key="White">White</Color>
     <Color x:Key="Black">Black</Color>
@@ -27,9 +46,22 @@
     <Color x:Key="Gray900">#212121</Color>
     <Color x:Key="Gray950">#141414</Color>
 
+    <!-- ============================================================
+         BRUSHES
+         ============================================================ -->
+
     <SolidColorBrush x:Key="PrimaryBrush" Color="{StaticResource Primary}"/>
+    <SolidColorBrush x:Key="PrimaryDarkBrush" Color="{StaticResource PrimaryDark}"/>
+    <SolidColorBrush x:Key="PrimaryLightBrush" Color="{StaticResource PrimaryLight}"/>
     <SolidColorBrush x:Key="SecondaryBrush" Color="{StaticResource Secondary}"/>
     <SolidColorBrush x:Key="TertiaryBrush" Color="{StaticResource Tertiary}"/>
+
+    <SolidColorBrush x:Key="BackgroundBrush" Color="{StaticResource Background}"/>
+    <SolidColorBrush x:Key="SurfaceBrush" Color="{StaticResource Surface}"/>
+
+    <SolidColorBrush x:Key="TextPrimaryBrush" Color="{StaticResource TextPrimary}"/>
+    <SolidColorBrush x:Key="TextSecondaryBrush" Color="{StaticResource TextSecondary}"/>
+
     <SolidColorBrush x:Key="WhiteBrush" Color="{StaticResource White}"/>
     <SolidColorBrush x:Key="BlackBrush" Color="{StaticResource Black}"/>
 
