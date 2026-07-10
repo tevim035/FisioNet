@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <doc>
     <assembly>
-        <name>FIsioNet</name>
+        <name>FisioNet</name>
     </assembly>
     <members>
         <member name="T:FIsioNet.Resource">
