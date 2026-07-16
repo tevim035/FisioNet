@@ -1,8 +1,8 @@
 package mono;
 public class MonoPackageManager_Resources {
 	public static String[] Assemblies = new String[]{
-		/* We need to ensure that "FisioNet.dll" comes first in this list. */
-		"FisioNet.dll",
+		/* We need to ensure that "FIsioNet.dll" comes first in this list. */
+		"FIsioNet.dll",
 		"GoogleGson.dll",
 		"Microsoft.Extensions.Configuration.dll",
 		"Microsoft.Extensions.Configuration.Abstractions.dll",

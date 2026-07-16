@@ -1768,12 +1768,12 @@ com.bumptech.glide.util.pool.FactoryPools$Poolable;com.bumptech.glide.util.pool.
 Bumptech.Glide.Util.Pool.FactoryPools+IResetter, Xamarin.Android.Glide;com.bumptech.glide.util.pool.FactoryPools$Resetter
 Bumptech.Glide.Util.Pool.FactoryPools.IResetter;com.bumptech.glide.util.pool.FactoryPools$Resetter
 com.bumptech.glide.util.pool.FactoryPools$Resetter;com.bumptech.glide.util.pool.FactoryPools$Resetter
-FIsioNet.MainActivity, FisioNet;crc64754e3d30a490eee4.MainActivity
-FIsioNet.MainActivity;crc64754e3d30a490eee4.MainActivity
-fisionet.MainActivity;crc64754e3d30a490eee4.MainActivity
-FIsioNet.MainApplication, FisioNet;crc64754e3d30a490eee4.MainApplication
-FIsioNet.MainApplication;crc64754e3d30a490eee4.MainApplication
-fisionet.MainApplication;crc64754e3d30a490eee4.MainApplication
+FIsioNet.MainActivity, FIsioNet;crc64aaf515aefca1316d.MainActivity
+FIsioNet.MainActivity;crc64aaf515aefca1316d.MainActivity
+fisionet.MainActivity;crc64aaf515aefca1316d.MainActivity
+FIsioNet.MainApplication, FIsioNet;crc64aaf515aefca1316d.MainApplication
+FIsioNet.MainApplication;crc64aaf515aefca1316d.MainApplication
+fisionet.MainApplication;crc64aaf515aefca1316d.MainApplication
 Google.Android.Material.Animation.IAnimatableView, Xamarin.Google.Android.Material;com.google.android.material.animation.AnimatableView
 Google.Android.Material.Animation.IAnimatableView;com.google.android.material.animation.AnimatableView
 com.google.android.material.animation.AnimatableView;com.google.android.material.animation.AnimatableView
