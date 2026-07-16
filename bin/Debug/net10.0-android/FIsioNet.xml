@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <doc>
     <assembly>
-        <name>FisioNet</name>
+        <name>FIsioNet</name>
     </assembly>
     <members>
-        <member name="T:FIsioNet.Resource">
+        <member name="T:FisioNet.Resource">
             <summary>
             Android Resource Designer class.
             Exposes the Android Resource designer assembly into the project Namespace.

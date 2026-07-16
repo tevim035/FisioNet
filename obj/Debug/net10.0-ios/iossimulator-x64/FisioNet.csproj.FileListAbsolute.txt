@@ -260,7 +260,6 @@ D:\Projetos\MAUI\FIsioNet\bin\Debug\net10.0-ios\iossimulator-x64\libxamarin-dotn
 D:\Projetos\MAUI\FIsioNet\bin\Debug\net10.0-ios\iossimulator-x64\libxamarin-dotnet-nativeaot.a
 D:\Projetos\MAUI\FIsioNet\bin\Debug\net10.0-ios\iossimulator-x64\libxamarin-dotnet.a
 D:\Projetos\MAUI\FIsioNet\bin\Debug\net10.0-ios\iossimulator-x64\libxamarin-dotnet.dylib
-D:\Projetos\MAUI\FIsioNet\obj\Debug\net10.0-ios\iossimulator-x64\build-signature\signature
 D:\Projetos\MAUI\FIsioNet\obj\Debug\net10.0-ios\iossimulator-x64\FisioNet.csproj.AssemblyReference.cache
 D:\Projetos\MAUI\FIsioNet\obj\Debug\net10.0-ios\iossimulator-x64\partialappmanifest\_PartialAppManifests.items
 D:\Projetos\MAUI\FIsioNet\obj\Debug\net10.0-ios\iossimulator-x64\unpack\Microsoft.Maui.Essentials\BundleResource\xml\microsoft_maui_essentials_fileprovider_file_paths.xml
