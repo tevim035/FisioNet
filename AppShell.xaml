@@ -5,23 +5,12 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:FIsioNet"
     xmlns:views="clr-namespace:FIsioNet.Views"
+    FlyoutBehavior="Disabled"
     Title="FIsioNet">
-
+    
     <ShellContent
         Title="LoginPage"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
-    <ShellContent
-        Title="FeedPage"
-        ContentTemplate="{DataTemplate views:FeedPage}"
-        Route="FeedPage" />
-    <ShellContent
-        Title="PostPage"
-        ContentTemplate="{DataTemplate views:PostPage}"
-        Route="PostPage"/>
-    <ShellContent
-        Title="ProfilePage"
-        ContentTemplate="{DataTemplate views:ProfilePage}"
-        Route="ProfilePage" />
 
 </Shell>

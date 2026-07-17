@@ -3,15 +3,54 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FIsioNet.Views.ProfilePage"
              Title="ProfilePage">
-    <StackLayout>
-        <Button
-            Text="Retorna Feed"
-            Padding="0"
-            HorizontalOptions="Start"
-            Background="{StaticResource Primary}"
-            Clicked="BtnVoltarClicked"
-            />
 
-    </StackLayout>
-        
+    <Grid RowDefinitions="Auto,*">
+
+        <!-- Bônus: deslizar para a esquerda (sentido inverso de como se chega aqui) também volta pro Feed -->
+        <Grid.GestureRecognizers>
+            <SwipeGestureRecognizer Direction="Left" Swiped="BtnVoltar_Clicked" />
+        </Grid.GestureRecognizers>
+
+        <!-- Cabeçalho: seta de voltar + título, mesma posição usada na PostPage -->
+        <Grid
+            Grid.Row="0"
+            ColumnDefinitions="Auto,*"
+            Padding="8,16"
+            ColumnSpacing="8">
+
+            <Button
+                Grid.Column="0"
+                x:Name="btnVoltar"
+                Text="&#8592;"
+                FontSize="20"
+                WidthRequest="44"
+                HeightRequest="44"
+                Padding="0"
+                CornerRadius="22"
+                BackgroundColor="Transparent"
+                TextColor="{StaticResource TextPrimary}"
+                Clicked="BtnVoltar_Clicked" />
+
+            <Label
+                Grid.Column="1"
+                Text="Perfil"
+                Style="{StaticResource SubHeadline}"
+                FontSize="18"
+                HorizontalOptions="Start"
+                HorizontalTextAlignment="Start"
+                VerticalOptions="Center" />
+
+        </Grid>
+
+        <VerticalStackLayout
+            Grid.Row="1"
+            VerticalOptions="Center"
+            HorizontalOptions="Center">
+            <Label
+                Text="ProfilePage"
+                TextColor="{StaticResource TextSecondary}" />
+        </VerticalStackLayout>
+
+    </Grid>
+
 </ContentPage>
