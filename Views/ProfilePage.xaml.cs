@@ -7,7 +7,7 @@ public partial class ProfilePage : ContentPage
 		InitializeComponent();
 	}
 
-	public async void BtnVoltarClicked(object sender, EventArgs e)
+	public async void BtnVoltar_Clicked(object sender, EventArgs e)
 	{
 		await Shell.Current.GoToAsync(nameof(FeedPage));
     }

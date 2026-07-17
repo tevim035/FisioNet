@@ -4,19 +4,83 @@
              x:Class="FIsioNet.Views.FeedPage"
              Title="Feed">
 
-    <StackLayout>
-        <Button
-            Text="PostPage"
-            Padding="20"
+    <Grid RowDefinitions="Auto,*,Auto">
+
+        <!--
+            Gestos de deslize cobrindo a página inteira.
+            Reaproveitam os MESMOS handlers dos botões (BtnPostPage_Clicked /
+            BtnProfilePage_Clicked) — não foi necessário criar nenhum método
+            novo no code-behind, já que EventHandler<SwipedEventArgs> aceita
+            um handler declarado com o EventArgs base.
+        -->
+        <Grid.GestureRecognizers>
+            <SwipeGestureRecognizer Direction="Left" Swiped="BtnProfilePage_Clicked" />
+            <SwipeGestureRecognizer Direction="Right" Swiped="BtnPostPage_Clicked" />
+        </Grid.GestureRecognizers>
+
+        <!-- Cabeçalho, mesma posição do wordmark "FISIOLINK" no Figma -->
+        <Label
+            Grid.Row="0"
+            Text="FISIOLINK"
+            FontAttributes="Bold"
+            FontSize="18"
+            TextColor="{StaticResource Primary}"
+            Padding="20,16"
+            HorizontalOptions="Start" />
+
+        <!-- Área de conteúdo do feed (placeholder por enquanto) -->
+        <VerticalStackLayout
+            Grid.Row="1"
+            VerticalOptions="Center"
             HorizontalOptions="Center"
-            VerticalOptions="Center"
-            Clicked="BtnPostPage_Clicked"/>
-        <Button
-            Text="ProfilePage"
-            Padding="-20"
-            HorizontalOptions="Start"
-            VerticalOptions="Center"
-            Clicked="BtnProfilePage_Clicked"/>
-    </StackLayout>
+            Spacing="8">
+            <Label
+                Text="Feed"
+                Style="{StaticResource SubHeadline}" />
+            <Label
+                Text="Deslize para a esquerda: Perfil  ·  Deslize para a direita: Publicar"
+                TextColor="{StaticResource TextSecondary}"
+                FontSize="12"
+                HorizontalTextAlignment="Center"
+                Padding="40,0" />
+        </VerticalStackLayout>
+
+        <!-- Barra inferior, mesma posição da bottom bar do Figma -->
+        <Grid
+            Grid.Row="2"
+            ColumnDefinitions="*,*"
+            BackgroundColor="{StaticResource Background}">
+
+            <BoxView
+                Grid.ColumnSpan="2"
+                HeightRequest="1"
+                Color="{StaticResource Gray200}"
+                VerticalOptions="Start" />
+
+            <Button
+                Grid.Column="0"
+                x:Name="btnPostPage"
+                Text="Publicar"
+                Clicked="BtnPostPage_Clicked"
+                BackgroundColor="Transparent"
+                TextColor="{StaticResource Primary}"
+                FontAttributes="Bold"
+                CornerRadius="0"
+                Padding="0,16" />
+
+            <Button
+                Grid.Column="1"
+                x:Name="btnProfilePage"
+                Text="Perfil"
+                Clicked="BtnProfilePage_Clicked"
+                BackgroundColor="Transparent"
+                TextColor="{StaticResource TextSecondary}"
+                FontAttributes="Bold"
+                CornerRadius="0"
+                Padding="0,16" />
+
+        </Grid>
+
+    </Grid>
 
 </ContentPage>
