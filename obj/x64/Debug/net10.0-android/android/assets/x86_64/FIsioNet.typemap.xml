@@ -1,0 +1,10 @@
+<api type="debug" assembly-name="FIsioNet" mvid="4361548ebdd44a26ab0824ed6b84bc79">
+  <java-to-managed>
+    <entry java-name="crc64aaf515aefca1316d/MainActivity" managed-name="FIsioNet.MainActivity, FIsioNet" managed-type-token-id="33554442" />
+    <entry java-name="crc64aaf515aefca1316d/MainApplication" managed-name="FIsioNet.MainApplication, FIsioNet" managed-type-token-id="33554443" />
+  </java-to-managed>
+  <managed-to-java>
+    <entry java-name="crc64aaf515aefca1316d/MainActivity" managed-name="FIsioNet.MainActivity, FIsioNet" managed-type-token-id="33554442" />
+    <entry java-name="crc64aaf515aefca1316d/MainApplication" managed-name="FIsioNet.MainApplication, FIsioNet" managed-type-token-id="33554443" />
+  </managed-to-java>
+</api>

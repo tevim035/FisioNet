@@ -3,6 +3,26 @@
   "WorkspaceRootPath": "D:\\Projetos\\MAUI\\FisioNet\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{26011D0C-1F88-356E-9B54-AC07013A10EE}|FIsioNet.csproj|d:\\projetos\\maui\\fisionet\\views\\feedpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{26011D0C-1F88-356E-9B54-AC07013A10EE}|FIsioNet.csproj|solutionrelative:views\\feedpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Gabriel\\.nuget\\packages\\microsoft.maui.resizetizer\\10.0.20\\buildTransitive\\Microsoft.Maui.Resizetizer.After.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\sdk\\10.0.302\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26011D0C-1F88-356E-9B54-AC07013A10EE}|FIsioNet.csproj|d:\\projetos\\maui\\fisionet\\fisionet.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{26011D0C-1F88-356E-9B54-AC07013A10EE}|FIsioNet.csproj|solutionrelative:fisionet.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\packs\\Microsoft.MacCatalyst.Sdk.net10.0_26.5\\26.5.10284\\targets\\Xamarin.Shared.Sdk.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\packs\\Microsoft.iOS.Sdk.net10.0_26.5\\26.5.10284\\targets\\Xamarin.Shared.Sdk.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{26011D0C-1F88-356E-9B54-AC07013A10EE}|FIsioNet.csproj|d:\\projetos\\maui\\fisionet\\resources\\styles\\styles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{26011D0C-1F88-356E-9B54-AC07013A10EE}|FIsioNet.csproj|solutionrelative:resources\\styles\\styles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
@@ -13,10 +33,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{26011D0C-1F88-356E-9B54-AC07013A10EE}|FIsioNet.csproj|d:\\projetos\\maui\\fisionet\\views\\postpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{26011D0C-1F88-356E-9B54-AC07013A10EE}|FIsioNet.csproj|solutionrelative:views\\postpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{26011D0C-1F88-356E-9B54-AC07013A10EE}|FIsioNet.csproj|d:\\projetos\\maui\\fisionet\\views\\feedpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{26011D0C-1F88-356E-9B54-AC07013A10EE}|FIsioNet.csproj|solutionrelative:views\\feedpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{26011D0C-1F88-356E-9B54-AC07013A10EE}|FIsioNet.csproj|d:\\projetos\\maui\\fisionet\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -43,10 +59,6 @@
       "RelativeMoniker": "D:0:0:{26011D0C-1F88-356E-9B54-AC07013A10EE}|FIsioNet.csproj|solutionrelative:views\\profilepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{26011D0C-1F88-356E-9B54-AC07013A10EE}|FIsioNet.csproj|d:\\projetos\\maui\\fisionet\\fisionet.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{26011D0C-1F88-356E-9B54-AC07013A10EE}|FIsioNet.csproj|solutionrelative:fisionet.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{26011D0C-1F88-356E-9B54-AC07013A10EE}|FIsioNet.csproj|d:\\projetos\\maui\\fisionet\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{26011D0C-1F88-356E-9B54-AC07013A10EE}|FIsioNet.csproj|solutionrelative:mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -70,50 +82,42 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "PostPage.xaml.cs",
-              "DocumentMoniker": "D:\\Projetos\\MAUI\\FisioNet\\Views\\PostPage.xaml.cs",
-              "RelativeDocumentMoniker": "Views\\PostPage.xaml.cs",
-              "ToolTip": "D:\\Projetos\\MAUI\\FisioNet\\Views\\PostPage.xaml.cs",
-              "RelativeToolTip": "Views\\PostPage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-10T18:45:01.619Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "FeedPage.xaml.cs",
-              "DocumentMoniker": "D:\\Projetos\\MAUI\\FisioNet\\Views\\FeedPage.xaml.cs",
-              "RelativeDocumentMoniker": "Views\\FeedPage.xaml.cs",
-              "ToolTip": "D:\\Projetos\\MAUI\\FisioNet\\Views\\FeedPage.xaml.cs",
-              "RelativeToolTip": "Views\\FeedPage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-10T18:42:44.236Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ProfilePage.xaml",
-              "DocumentMoniker": "D:\\Projetos\\MAUI\\FisioNet\\Views\\ProfilePage.xaml",
-              "RelativeDocumentMoniker": "Views\\ProfilePage.xaml",
-              "ToolTip": "D:\\Projetos\\MAUI\\FisioNet\\Views\\ProfilePage.xaml",
-              "RelativeToolTip": "Views\\ProfilePage.xaml",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAADgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-07-10T18:42:15.254Z",
+              "Title": "Microsoft.Maui.Resizetizer.After.targets",
+              "DocumentMoniker": "C:\\Users\\Gabriel\\.nuget\\packages\\microsoft.maui.resizetizer\\10.0.20\\buildTransitive\\Microsoft.Maui.Resizetizer.After.targets",
+              "ToolTip": "C:\\Users\\Gabriel\\.nuget\\packages\\microsoft.maui.resizetizer\\10.0.20\\buildTransitive\\Microsoft.Maui.Resizetizer.After.targets",
+              "ViewState": "AgIAAF8CAAAAAAAAAAAmwHECAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2026-07-18T04:02:38.269Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 4,
+              "Title": "Xamarin.Shared.Sdk.targets",
+              "DocumentMoniker": "C:\\Program Files\\dotnet\\packs\\Microsoft.MacCatalyst.Sdk.net10.0_26.5\\26.5.10284\\targets\\Xamarin.Shared.Sdk.targets",
+              "ToolTip": "C:\\Program Files\\dotnet\\packs\\Microsoft.MacCatalyst.Sdk.net10.0_26.5\\26.5.10284\\targets\\Xamarin.Shared.Sdk.targets",
+              "ViewState": "AgIAAJAKAAAAAAAAAAAkwKUKAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2026-07-18T02:21:38.95Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Xamarin.Shared.Sdk.targets",
+              "DocumentMoniker": "C:\\Program Files\\dotnet\\packs\\Microsoft.iOS.Sdk.net10.0_26.5\\26.5.10284\\targets\\Xamarin.Shared.Sdk.targets",
+              "ToolTip": "C:\\Program Files\\dotnet\\packs\\Microsoft.iOS.Sdk.net10.0_26.5\\26.5.10284\\targets\\Xamarin.Shared.Sdk.targets",
+              "ViewState": "AgIAAJAKAAAAAAAAAAAkwKUKAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2026-07-18T02:21:26.561Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "MainPage.xaml",
               "DocumentMoniker": "D:\\Projetos\\MAUI\\FisioNet\\MainPage.xaml",
               "RelativeDocumentMoniker": "MainPage.xaml",
@@ -121,12 +125,11 @@
               "RelativeToolTip": "MainPage.xaml",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAABIAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-07-10T02:23:29.599Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-10T02:23:29.599Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "Styles.xaml",
               "DocumentMoniker": "D:\\Projetos\\MAUI\\FisioNet\\Resources\\Styles\\Styles.xaml",
               "RelativeDocumentMoniker": "Resources\\Styles\\Styles.xaml",
@@ -139,7 +142,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 13,
               "Title": "Colors.xaml",
               "DocumentMoniker": "D:\\Projetos\\MAUI\\FisioNet\\Resources\\Styles\\Colors.xaml",
               "RelativeDocumentMoniker": "Resources\\Styles\\Colors.xaml",
@@ -152,20 +155,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "FeedPage.xaml",
               "DocumentMoniker": "D:\\Projetos\\MAUI\\FisioNet\\Views\\FeedPage.xaml",
               "RelativeDocumentMoniker": "Views\\FeedPage.xaml",
-              "ToolTip": "D:\\Projetos\\MAUI\\FisioNet\\Views\\FeedPage.xaml",
-              "RelativeToolTip": "Views\\FeedPage.xaml",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAAAFQAAAAAAAAAAAAAAA==",
+              "ToolTip": "D:\\Projetos\\MAUI\\FisioNet\\Views\\FeedPage.xaml*",
+              "RelativeToolTip": "Views\\FeedPage.xaml*",
+              "ViewState": "AgIAAHUAAAAAAAAAAAAAANgAAABaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2026-07-10T18:41:48.169Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 2,
+              "Title": "Microsoft.PackageDependencyResolution.targets",
+              "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\10.0.302\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
+              "ToolTip": "C:\\Program Files\\dotnet\\sdk\\10.0.302\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
+              "ViewState": "AgIAAAYBAAAAAAAAAAAkwAkBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2026-07-18T02:23:30.51Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "AppShell.xaml.cs",
               "DocumentMoniker": "D:\\Projetos\\MAUI\\FisioNet\\AppShell.xaml.cs",
               "RelativeDocumentMoniker": "AppShell.xaml.cs",
@@ -177,7 +191,44 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
+              "Title": "FIsioNet.csproj",
+              "DocumentMoniker": "D:\\Projetos\\MAUI\\FIsioNet\\FIsioNet.csproj",
+              "RelativeDocumentMoniker": "FIsioNet.csproj",
+              "ToolTip": "D:\\Projetos\\MAUI\\FIsioNet\\FIsioNet.csproj",
+              "RelativeToolTip": "FIsioNet.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-07-15T00:32:17.791Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ProfilePage.xaml",
+              "DocumentMoniker": "D:\\Projetos\\MAUI\\FisioNet\\Views\\ProfilePage.xaml",
+              "RelativeDocumentMoniker": "Views\\ProfilePage.xaml",
+              "ToolTip": "D:\\Projetos\\MAUI\\FisioNet\\Views\\ProfilePage.xaml",
+              "RelativeToolTip": "Views\\ProfilePage.xaml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAADgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-07-10T18:42:15.254Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "FeedPage.xaml.cs",
+              "DocumentMoniker": "D:\\Projetos\\MAUI\\FisioNet\\Views\\FeedPage.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\FeedPage.xaml.cs",
+              "ToolTip": "D:\\Projetos\\MAUI\\FisioNet\\Views\\FeedPage.xaml.cs",
+              "RelativeToolTip": "Views\\FeedPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-10T18:42:44.236Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "PostPage.xaml",
               "DocumentMoniker": "D:\\Projetos\\MAUI\\FisioNet\\Views\\PostPage.xaml",
               "RelativeDocumentMoniker": "Views\\PostPage.xaml",
@@ -185,12 +236,11 @@
               "RelativeToolTip": "Views\\PostPage.xaml",
               "ViewState": "AgIAAB0AAAAAAAAAAAAkwDgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-07-10T18:42:24.404Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-10T18:42:24.404Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "AppShell.xaml",
               "DocumentMoniker": "D:\\Projetos\\MAUI\\FisioNet\\AppShell.xaml",
               "RelativeDocumentMoniker": "AppShell.xaml",
@@ -198,12 +248,23 @@
               "RelativeToolTip": "AppShell.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-07-10T19:00:36.197Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-10T19:00:36.197Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
+              "Title": "PostPage.xaml.cs",
+              "DocumentMoniker": "D:\\Projetos\\MAUI\\FisioNet\\Views\\PostPage.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\PostPage.xaml.cs",
+              "ToolTip": "D:\\Projetos\\MAUI\\FisioNet\\Views\\PostPage.xaml.cs",
+              "RelativeToolTip": "Views\\PostPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-10T18:45:01.619Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "ProfilePage.xaml.cs",
               "DocumentMoniker": "D:\\Projetos\\MAUI\\FisioNet\\Views\\ProfilePage.xaml.cs",
               "RelativeDocumentMoniker": "Views\\ProfilePage.xaml.cs",
@@ -211,24 +272,11 @@
               "RelativeToolTip": "Views\\ProfilePage.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-10T18:45:15.069Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-10T18:45:15.069Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "FIsioNet.csproj",
-              "DocumentMoniker": "D:\\Projetos\\MAUI\\FIsioNet\\FIsioNet.csproj",
-              "RelativeDocumentMoniker": "FIsioNet.csproj",
-              "ToolTip": "D:\\Projetos\\MAUI\\FIsioNet\\FIsioNet.csproj",
-              "RelativeToolTip": "FIsioNet.csproj",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-07-15T00:32:17.791Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 15,
               "Title": "MainPage.xaml.cs",
               "DocumentMoniker": "D:\\Projetos\\MAUI\\FisioNet\\MainPage.xaml.cs",
               "RelativeDocumentMoniker": "MainPage.xaml.cs",
@@ -240,7 +288,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 17,
               "Title": "MauiProgram.cs",
               "DocumentMoniker": "D:\\Projetos\\MAUI\\FisioNet\\MauiProgram.cs",
               "RelativeDocumentMoniker": "MauiProgram.cs",
@@ -252,7 +300,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 18,
               "Title": "App.xaml",
               "DocumentMoniker": "D:\\Projetos\\MAUI\\FisioNet\\App.xaml",
               "RelativeDocumentMoniker": "App.xaml",
