@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <_PostProcessingItem Include="FIsioNet.app/Contents\MacOS\">
+    <_PostProcessingItem Include="FisioNet.app/Contents\MacOS\">
       <IsAppExtension>false</IsAppExtension>
       <BCSymbolMapName>.bcsymbolmap</BCSymbolMapName>
       <NoDSymUtil>true</NoDSymUtil>
       <dSYMSourcePathExists>false</dSYMSourcePathExists>
       <NoSymbolStrip>true</NoSymbolStrip>
-      <dSYMInfoPlistRelativePath>FIsioNet.app.dSYM\Contents\Info.plist</dSYMInfoPlistRelativePath>
+      <dSYMInfoPlistRelativePath>FisioNet.app.dSYM\Contents\Info.plist</dSYMInfoPlistRelativePath>
       <SymbolFile></SymbolFile>
-      <DSymName>FIsioNet.app.dSYM</DSymName>
+      <DSymName>FisioNet.app.dSYM</DSymName>
       <SourceProjectPath>D:\Projetos\MAUI\FIsioNet</SourceProjectPath>
       <IsXPCService></IsXPCService>
     </_PostProcessingItem>

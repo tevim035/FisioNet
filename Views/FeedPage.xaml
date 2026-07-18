@@ -2,85 +2,222 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FIsioNet.Views.FeedPage"
+             BackgroundColor="{StaticResource Background}"
              Title="Feed">
 
-    <Grid RowDefinitions="Auto,*,Auto">
+    <!-- Grid principal: O conteúdo ocupa o topo (*) e a BottomBar fica fixa (Auto) -->
+    <Grid RowDefinitions="*, Auto">
 
-        <!--
-            Gestos de deslize cobrindo a página inteira.
-            Reaproveitam os MESMOS handlers dos botões (BtnPostPage_Clicked /
-            BtnProfilePage_Clicked) — não foi necessário criar nenhum método
-            novo no code-behind, já que EventHandler<SwipedEventArgs> aceita
-            um handler declarado com o EventArgs base.
-        -->
+        <!-- Gestos horizontais mantidos do seu código original -->
         <Grid.GestureRecognizers>
             <SwipeGestureRecognizer Direction="Left" Swiped="BtnProfilePage_Clicked" />
             <SwipeGestureRecognizer Direction="Right" Swiped="BtnPostPage_Clicked" />
         </Grid.GestureRecognizers>
 
-        <!-- Cabeçalho, mesma posição do wordmark "FISIOLINK" no Figma -->
-        <Label
-            Grid.Row="0"
-            Text="FISIOLINK"
-            FontAttributes="Bold"
-            FontSize="18"
-            TextColor="{StaticResource Primary}"
-            Padding="20,16"
-            HorizontalOptions="Start" />
+        <!-- Container do Feed estilo TikTok -->
+        <CarouselView Grid.Row="0"
+                      VerticalScrollBarVisibility="Never"
+                      Loop="False">
+            <CarouselView.ItemsLayout>
+                <!-- Força o scroll vertical travando de 1 em 1 item -->
+                <LinearItemsLayout Orientation="Vertical"
+                                   SnapPointsType="MandatorySingle"
+                                   SnapPointsAlignment="Start" />
+            </CarouselView.ItemsLayout>
 
-        <!-- Área de conteúdo do feed (placeholder por enquanto) -->
-        <VerticalStackLayout
-            Grid.Row="1"
-            VerticalOptions="Center"
-            HorizontalOptions="Center"
-            Spacing="8">
-            <Label
-                Text="Feed"
-                Style="{StaticResource SubHeadline}" />
-            <Label
-                Text="Deslize para a esquerda: Perfil  ·  Deslize para a direita: Publicar"
-                TextColor="{StaticResource TextSecondary}"
-                FontSize="12"
-                HorizontalTextAlignment="Center"
-                Padding="40,0" />
-        </VerticalStackLayout>
+            <CarouselView.ItemTemplate>
+                <DataTemplate>
+                    <!-- Grid interno do post. Todos os elementos aqui se sobrepõem. -->
+                    <Grid>
+                        <!-- 1. Mídia de Fundo (Placeholder) -->
+                        <!-- AspectFill garante que a imagem/vídeo cubra toda a área sem distorcer -->
+                        <Image Source="image_b79185.jpg"
+                               Aspect="AspectFill" 
+                               VerticalOptions="Fill" 
+                               HorizontalOptions="Fill" />
 
-        <!-- Barra inferior, mesma posição da bottom bar do Figma -->
-        <Grid
-            Grid.Row="2"
-            ColumnDefinitions="*,*"
-            BackgroundColor="{StaticResource Background}">
+                        <!-- 2. Gradiente escuro inferior para dar legibilidade ao texto -->
+                        <BoxView VerticalOptions="End" HeightRequest="350">
+                            <BoxView.Background>
+                                <LinearGradientBrush EndPoint="0,1">
+                                    <GradientStop Color="Transparent" Offset="0.0" />
+                                    <GradientStop Color="#CC000000" Offset="1.0" />
+                                </LinearGradientBrush>
+                            </BoxView.Background>
+                        </BoxView>
 
-            <BoxView
-                Grid.ColumnSpan="2"
-                HeightRequest="1"
-                Color="{StaticResource Gray200}"
-                VerticalOptions="Start" />
+                        <!-- 3. Topo: Logo e Botão de Áudio -->
+                        <Grid VerticalOptions="Start" 
+                              Padding="20,40,20,0" 
+                              ColumnDefinitions="Auto, *, Auto">
+                            <Label Grid.Column="0"
+                                   Text="FISIOLINK"
+                                   FontAttributes="Bold"
+                                   FontSize="16"
+                                   TextColor="White"
+                                   VerticalOptions="Center" />
 
-            <Button
-                Grid.Column="0"
-                x:Name="btnPostPage"
-                Text="Publicar"
-                Clicked="BtnPostPage_Clicked"
-                BackgroundColor="Transparent"
-                TextColor="{StaticResource Primary}"
-                FontAttributes="Bold"
-                CornerRadius="0"
-                Padding="0,16" />
+                            <ImageButton Grid.Column="2" 
+                                         Source="ic_volume_off.png" 
+                                         WidthRequest="36" 
+                                         HeightRequest="36" 
+                                         CornerRadius="18" 
+                                         BackgroundColor="#40000000" />
+                        </Grid>
 
-            <Button
-                Grid.Column="1"
-                x:Name="btnProfilePage"
-                Text="Perfil"
-                Clicked="BtnProfilePage_Clicked"
-                BackgroundColor="Transparent"
-                TextColor="{StaticResource TextSecondary}"
-                FontAttributes="Bold"
-                CornerRadius="0"
-                Padding="0,16" />
+                        <!-- 4. Rodapé do Post: Informações (Esquerda) e Ações (Direita) -->
+                        <Grid VerticalOptions="End" 
+                              Padding="16,0,12,20" 
+                              ColumnDefinitions="*, Auto">
 
+                            <!-- Coluna Esquerda: Textos e Tags -->
+                            <VerticalStackLayout Grid.Column="0" 
+                                                 VerticalOptions="End" 
+                                                 Spacing="8" 
+                                                 Padding="0,0,20,0">
+
+                                <!-- Nome e Verificado -->
+                                <HorizontalStackLayout Spacing="6" VerticalOptions="Center">
+                                    <Label Text="Dra. Fernanda Lima" 
+                                           FontAttributes="Bold" 
+                                           FontSize="16" 
+                                           TextColor="White" />
+                                    <Image Source="ic_verified.png" 
+                                           WidthRequest="16" 
+                                           HeightRequest="16" 
+                                           VerticalOptions="Center"/>
+                                </HorizontalStackLayout>
+
+                                <Label Text="Fisioterapia Neurológica · CREFITO-2: 98312" 
+                                       FontSize="13" 
+                                       TextColor="#E0E0E0" />
+
+                                <!-- Tags usando Border (melhor performance que Frame) -->
+                                <HorizontalStackLayout Spacing="8">
+                                    <Border BackgroundColor="#2A6F4E" 
+                                            Stroke="Transparent" 
+                                            StrokeShape="RoundRectangle 4" 
+                                            Padding="8,4">
+                                        <Label Text="CID G82.5" FontSize="11" TextColor="White" />
+                                    </Border>
+                                    <Border BackgroundColor="#666666" 
+                                            Stroke="Transparent" 
+                                            StrokeShape="RoundRectangle 4" 
+                                            Padding="8,4">
+                                        <Label Text="Método Bobath" FontSize="11" TextColor="White" />
+                                    </Border>
+                                </HorizontalStackLayout>
+
+                                <!-- Descrição do Post -->
+                                <Label Text="Reabilitação motora pós-AVC: protocolo de 8 semanas com resultados mensuráveis em escala FIM." 
+                                       FontSize="14" 
+                                       TextColor="White" 
+                                       LineBreakMode="WordWrap" />
+
+                                <!-- Indicador de Carrossel de Imagens (Dots) -->
+                                <HorizontalStackLayout Spacing="4" Margin="0,8,0,0">
+                                    <BoxView WidthRequest="20" HeightRequest="4" CornerRadius="2" Color="#2A6F4E" />
+                                    <BoxView WidthRequest="5" HeightRequest="4" CornerRadius="2" Color="#888888" />
+                                    <BoxView WidthRequest="5" HeightRequest="4" CornerRadius="2" Color="#888888" />
+                                </HorizontalStackLayout>
+                            </VerticalStackLayout>
+
+                            <!-- Coluna Direita: Botões de Interação -->
+                            <VerticalStackLayout Grid.Column="1" 
+                                                 VerticalOptions="End" 
+                                                 Spacing="24" 
+                                                 HorizontalOptions="Center">
+
+                                <!-- Foto de Perfil com botão '+' -->
+                                <Grid WidthRequest="50" HeightRequest="58">
+                                    <Border Stroke="White" 
+                                            StrokeThickness="1.5" 
+                                            StrokeShape="RoundRectangle 25" 
+                                            WidthRequest="50" 
+                                            HeightRequest="50" 
+                                            VerticalOptions="Start">
+                                        <Image Source="profile_placeholder.png" Aspect="AspectFill" />
+                                    </Border>
+                                    <Image Source="ic_add_circle.png" 
+                                           WidthRequest="20" 
+                                           HeightRequest="20" 
+                                           VerticalOptions="End" 
+                                           HorizontalOptions="Center" 
+                                           Margin="0,0,0,-4" />
+                                </Grid>
+
+                                <!-- Curtir -->
+                                <VerticalStackLayout Spacing="4" HorizontalOptions="Center">
+                                    <Image Source="ic_heart.png" WidthRequest="32" HeightRequest="32" />
+                                    <Label Text="1.247" FontSize="12" FontAttributes="Bold" TextColor="White" HorizontalOptions="Center" />
+                                </VerticalStackLayout>
+
+                                <!-- Salvar -->
+                                <VerticalStackLayout Spacing="4" HorizontalOptions="Center">
+                                    <Image Source="ic_bookmark.png" WidthRequest="32" HeightRequest="32" />
+                                    <Label Text="389" FontSize="12" FontAttributes="Bold" TextColor="White" HorizontalOptions="Center" />
+                                </VerticalStackLayout>
+
+                                <!-- Compartilhar -->
+                                <VerticalStackLayout Spacing="4" HorizontalOptions="Center">
+                                    <Image Source="ic_share.png" WidthRequest="32" HeightRequest="32" />
+                                    <Label Text="Partilhar" FontSize="12" FontAttributes="Bold" TextColor="White" HorizontalOptions="Center" />
+                                </VerticalStackLayout>
+                            </VerticalStackLayout>
+                        </Grid>
+                    </Grid>
+                </DataTemplate>
+            </CarouselView.ItemTemplate>
+        </CarouselView>
+
+        <!-- Custom Bottom Navigation Bar -->
+        <Grid Grid.Row="1" 
+              BackgroundColor="{StaticResource Secondary}" 
+              ColumnDefinitions="*,*,*,*,*" 
+              Padding="0,12,0,24">
+
+            <BoxView Grid.ColumnSpan="5" 
+                     HeightRequest="1" 
+                     Color="{StaticResource Secondary}" 
+                     VerticalOptions="Start" 
+                     Margin="0,-12,0,0" />
+
+            <!-- Feed -->
+            <VerticalStackLayout Grid.Column="0" HorizontalOptions="Center" Spacing="4">
+                <Image Source="button_home.png" WidthRequest="24" HeightRequest="24" />
+                <Label Text="Feed" FontSize="10" TextColor="{StaticResource Primary}" HorizontalOptions="Center" />
+            </VerticalStackLayout>
+
+            <!-- Buscar -->
+            <VerticalStackLayout Grid.Column="1" HorizontalOptions="Center" Spacing="4">
+                <Image Source="button_search.png" WidthRequest="24" HeightRequest="24" />
+                <Label Text="Buscar" FontSize="10" TextColor="{StaticResource Primary}" HorizontalOptions="Center" />
+            </VerticalStackLayout>
+
+            <!-- Publicar (Botão Central) -->
+            <VerticalStackLayout Grid.Column="2" HorizontalOptions="Center" Spacing="4" Margin="0,-4,0,0">
+                <Border BackgroundColor="{StaticResource Primary}" 
+                        Stroke="Transparent"
+                        StrokeShape="RoundRectangle 10" 
+                        Padding="12,6"
+                        WidthRequest="45">
+                    <Image Source="button_newpost.png" WidthRequest="18" HeightRequest="18" HorizontalOptions="Center" />
+                </Border>
+                <Label Text="Publicar" FontSize="10" TextColor="{StaticResource Primary}" HorizontalOptions="Center" />
+            </VerticalStackLayout>
+
+            <!-- Avisos -->
+            <VerticalStackLayout Grid.Column="3" HorizontalOptions="Center" Spacing="4">
+                <Image Source="button_notification.png" WidthRequest="24" HeightRequest="24" />
+                <Label Text="Avisos" FontSize="10" TextColor="{StaticResource Primary}" HorizontalOptions="Center" />
+            </VerticalStackLayout>
+
+            <!-- Perfil -->
+            <VerticalStackLayout Grid.Column="4" HorizontalOptions="Center" Spacing="4">
+                <Image Source="button_profile.png" WidthRequest="24" HeightRequest="24" />
+                <Label Text="Perfil" FontSize="10" TextColor="{StaticResource Primary}" HorizontalOptions="Center" />
+            </VerticalStackLayout>
         </Grid>
 
     </Grid>
-
 </ContentPage>
