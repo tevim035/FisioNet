@@ -17,4 +17,14 @@ public partial class FeedPage : ContentPage
     {
         await Shell.Current.GoToAsync(nameof(ProfilePage));
     }
+
+    public void BtnFeedPage_Clicked(object sender, EventArgs e)
+    {
+        // Já estamos no Feed, nada a fazer.
+    }
+
+    public async void BtnEmBreve_Clicked(object sender, EventArgs e)
+    {
+        await DisplayAlert("FisioNet", "Em breve.", "OK");
+    }
 }

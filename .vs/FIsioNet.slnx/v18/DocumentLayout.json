@@ -34,9 +34,9 @@
               "Title": "CadastroPage.xaml",
               "DocumentMoniker": "C:\\FACULDADE\\FisioNet\\Views\\CadastroPage.xaml",
               "RelativeDocumentMoniker": "Views\\CadastroPage.xaml",
-              "ToolTip": "C:\\FACULDADE\\FisioNet\\Views\\CadastroPage.xaml*",
-              "RelativeToolTip": "Views\\CadastroPage.xaml*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAPAAAAAAAAAA==",
+              "ToolTip": "C:\\FACULDADE\\FisioNet\\Views\\CadastroPage.xaml",
+              "RelativeToolTip": "Views\\CadastroPage.xaml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAYAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2026-07-23T00:11:57.752Z",
               "EditorCaption": ""
@@ -51,8 +51,7 @@
               "RelativeToolTip": "Views\\FeedPage.xaml",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAB0AAABYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-07-22T01:52:02.203Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-22T01:52:02.203Z"
             },
             {
               "$type": "Document",
