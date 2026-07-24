@@ -27,4 +27,9 @@ public partial class FeedPage : ContentPage
     {
         await DisplayAlert("FisioNet", "Em breve.", "OK");
     }
+
+    public async void BtnAvisosPage_Clicked(object sender, EventArgs e)
+    {
+        await Shell.Current.GoToAsync(nameof(AvisosPage));
+    }
 }

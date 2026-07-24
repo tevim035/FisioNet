@@ -10,6 +10,7 @@
             Routing.RegisterRoute(nameof(Views.PostPage), typeof(Views.PostPage));
             Routing.RegisterRoute(nameof(Views.ProfilePage), typeof(Views.ProfilePage));
             Routing.RegisterRoute(nameof(Views.FeedPage), typeof(Views.FeedPage));
+            Routing.RegisterRoute(nameof(Views.AvisosPage), typeof(Views.AvisosPage));
         }
     }
 }
